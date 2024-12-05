@@ -1,0 +1,51 @@
+/*
+El CSS define el aspecto visual de los elementos HTML anteriores.
+      
+Si te fijas es bastante legible, cada bloque son un conjunto de nombres
+de estilos y valores (font-size se refiere al tamaño de la fuente, 20px define su valor)
+      
+Cada bloque está precedido por una regla que indica a cuales de los elementos HTML
+anteriores se aplica.
+      
+Prueba a cambiar cosas y ver el resultado a la derecha.
+      
+Este es el código de la web que ves a la derecha 👇
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    margin-top: 50px;
+    background-color: gray;
+}
+
+section {
+    padding: 22px;
+    box-shadow: 2px 2px 15px black;
+    transform: rotate(7.5deg);
+    background-color: white;
+}
+
+section header h1 {
+    margin-bottom: 10px;
+    color: orange;
+}
+
+section figcaption {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+section figcaption * {
+    font-weight: bold;
+    color: orange;
+}
